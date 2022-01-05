@@ -154,8 +154,8 @@ position: absolute;
 }
 #BezierCurveCanvas{
   position:absolute;
-  height:13%;
-  width: 20%;
+  height:5em;
+  width: 18em;
   top: 2460px;
   left: 750px;
 }
@@ -206,4 +206,5 @@ a:-webkit-any-link {
   cursor: pointer;
   text-decoration: underline;
 }
+
 

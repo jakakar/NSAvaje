@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/scrollreveal.min.js"></script>
   </head>
-  <body>
+  <body onload="toggleBezier()">
 
     <!-- Header -->
   <header>
@@ -26,13 +26,13 @@
     <div class="collapse navbar-collapse text-center" style="border: none;" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" href="#showcase">PNG <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#showcase">LEBRON 15 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#info1">SVG</a>
+            <a class="nav-link" href="#info1">LEBRON 17</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">BEZIER</a>
+            <a class="nav-link" href="#contact">LEBRON 16</a>
           </li>
         </ul>
       </div>
@@ -175,25 +175,28 @@
 <!-- Section display -->
   <section id="display">
     <div class="mt-5">
-    <div class="container container-fluid">
+    <div class="container container-fluid">d
       <img src="img/shoe3.png" alt="Product image" id="img3">
       <canvas id="BezierCurveCanvas" width="1955" height="800"></canvas>
-        <script>
+      <script>
           
-   var c = document.getElementById("BezierCurveCanvas");
-          var context = c.getContext("2d");
-        context.beginPath();
-        context.moveTo(353, 393);
-        context.bezierCurveTo(586, 436, 1044, 198, 1905, 18);
-        context.bezierCurveTo(617, 530, 348, 777, 114, 644);
-        context.bezierCurveTo(-126, 464, 183, 123, 290, 8);
-        context.bezierCurveTo(181, 197, 202, 359, 353, 393);
-        context.fillStyle = "";
-        context.strokeStyle = "";
-        context.stroke();
-        context.fill();
+          function toggleBezier(){
+    var el = document.getElementById('BezierCurveCanvas');
+    var context = el.getContext("2d");
+    context.moveTo(353, 393);
+    context.bezierCurveTo(586, 436, 1044, 198, 1905, 18);
+    context.bezierCurveTo(617, 530, 348, 777, 114, 644);
+    context.bezierCurveTo(-126, 464, 183, 123, 290, 8);
+    context.bezierCurveTo(181, 197, 202, 359, 353, 393);
+    context.lineTo(353, 393);
+    context.fill();  
+    context.stroke();
+ }
+ 
   
         </script>  
+        
+        
     </div>
    
   </div>
