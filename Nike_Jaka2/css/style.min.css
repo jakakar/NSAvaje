@@ -1,3 +1,7 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.025em;
+}
 
 /* Global Styles */
 h1,h2,h3,h4,h5,h6{
@@ -12,7 +16,9 @@ body{
   margin-top: 70px;
   font-size: 16px;
 }
-
+img{
+  box-shadow: 14px 10px 36px -6px rgba(0,0,0,0.22);
+}
 
 /* Navbar Styles */
 .navbar-default{
@@ -84,6 +90,7 @@ body{
 }
 #img{
   margin-top: 10px;
+  box-shadow: 14px 10px 36px -6px rgba(0,0,0,0.0);
 }
 /* End #shoe-image styles */
 
@@ -128,6 +135,7 @@ a.back-to-top{
   width: 920px;
   height: 430px;
 	position: relative;
+  box-shadow: 14px 10px 36px -6px rgba(0,0,0,0.22);
 }
 #img4{
   max-width:38%;
@@ -136,6 +144,7 @@ position: absolute;
   top: 175px;
   margin-right: 80px;
   filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+  box-shadow: 14px 10px 36px -6px rgba(0,0,0,0.0);
 }
 .car{
   display: flex;
@@ -148,17 +157,27 @@ position: absolute;
   left: 212px;
   max-width:27%;
   max-height:45%;
+  opacity: 0.9;
+
 }
 #img2{
-  position: relative;
+  position: absolute;
 }
 #BezierCurveCanvas{
-  position:absolute;
-  height:8em;
-  width: 23em;
-  top: 2460px;
-  left: 750px;
+  position:relative;
+  height:4.2em;
+  width: 9.5em;
+bottom: 13.9em;
+left: 39.41em;
 }
+.rotate90{
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
 #footer {
   height: 140px;
   background: #f1f1f1;
@@ -207,4 +226,6 @@ a:-webkit-any-link {
   text-decoration: underline;
 }
 
-
+#imgsmalllogo{
+  box-shadow: 14px 10px 36px -6px rgba(0,0,0,0.10);
+}
